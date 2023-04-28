@@ -1,0 +1,48 @@
+<div class="container mt-5">
+    <div class="fw-bold fs-4">
+        Tin tức bất động sản
+    </div>
+
+    <div id="owl-tin-tuc" class="owl-carousel owl-theme mt-3">
+        @@for (var i = 1; i <= 5; i++) {
+            <div class="rounded border border-1 border-muted">
+                <img src="https://img.iproperty.com.my/angel/610x342-crop/wp-content/uploads/sites/7/2023/04/nha-cap-4-dep-500-trieu.jpg"
+                    class="rounded-top img-fluid w-100" alt="">
+                <div class="p-3 d-flex gap-3 align-items-center">
+                    <span class="fw-bold fs-1 text-secondary">0`+i+`</span>
+                    <span class="fw-semibold text-truncate text-wrap"
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                        Quý 1/2023, Giá Căn Hộ Vẫn Tăng, Giá Đất Nền Giảm
+                        Quý 1/2023, Giá Căn Hộ Vẫn Tăng, Giá Đất Nền Giảm
+                    </span>
+                </div>
+            </div>
+        }
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#owl-tin-tuc").owlCarousel({
+                // center: true,
+                // loop: true,
+                autoplay: false,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                margin: 10,
+                responsiveClass: true,
+                // nav:true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                }
+            });
+        });
+    </script>
+</div>
