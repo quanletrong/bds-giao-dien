@@ -41,15 +41,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>DANH SÁCH BĐS</title>
+    <title>CHI TIẾT BĐS</title>
 </head>
 
 <body>
 
     @@include('../layout/header.html')
+    <div class="container">
+        @@include('../components/detail-bds/box-1-filter.html')
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                @@include('../components/detail-bds/box-2-image-slide.html')
+                @@include('../components/detail-bds/box-3-thong-tin-bds.html')
+            </div>
+            <div class="col-lg-3">
+                @@include('../components/detail-bds/box-right.html')
+            </div>
+        </div>
+    </div>
+    
 
-    @@include('../components/list-bds/box-1-filter.html')
-    @@include('../components/list-bds/box-2-item-bds.html')
     @@include('../layout/footer.html')
 
 </body>
