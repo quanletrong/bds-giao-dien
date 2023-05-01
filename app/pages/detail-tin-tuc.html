@@ -41,7 +41,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>DANH SÁCH ĐẤU GIÁ BĐS</title>
+    <title>CHI TIẾT TIN TỨC</title>
 </head>
 
 <body>
@@ -52,32 +52,48 @@
         <nav aria-label="breadcrumb" class="mt-2">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#" class="text-secondary">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Đấu giá</li>
+                <li class="breadcrumb-item"><a href="#" class="text-secondary">Tin tức</a></li>
+                <li class="breadcrumb-item active" aria-current="page">CÁC NGÂN HÀNG LỚN THỐNG NHẤT GIẢM LÃI SUẤT HUY
+                    ĐỘNG
+                </li>
             </ol>
-            </nav>
-        <div class="mt-5 d-flex justify-content-center align-items-center flex-column">
-            <h2>
-                Đấu giá bất động sản mới nhất
-            </h2>
-            <p class="my-2 w-50 fw-semibold d-none d-lg-block" style="font-size: 16px;">
-                Thông tin mới, đầy đủ, hấp dẫn về thị trường bất động sản Đông Anh thông qua dữ liệu lớn về giá, giao dịch, nguồn cung - cầu và khảo sát thực tế của đội ngũ phóng viên, biên tập của <span class="text-danger">datdonganh.vn</sâpn>
-            </p>
+        </nav>
+        <div class="mt-5 fs-4 fw-semibold">
+            CÁC NGÂN HÀNG LỚN THỐNG NHẤT GIẢM LÃI SUẤT HUY ĐỘNG
+        </div>
+
+        <div class="author d-flex align-items-center mt-3">
+            <img src="images/logo.png" alt="" class="border rounded-circle me-3" width="48" height="48"
+                style="aspect-ratio: 1; object-fit: cover;">
+            <div>
+                <div>Được đăng bởi <strong>Lan Chi</strong></div>
+                <div>Cập nhật lần cuối vào 06/04/2023 11:10 • Đọc trong khoảng 9 phút</div>
+            </div>
         </div>
     </div>
 
-    @@include('../components/list-dau-gia/box-1-dau-gia-noi-bat.html')
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                @@include('../components/detail-tin-tuc/box-1-tin-tuc-content.html')
+            </div>
+            <div class="col-12 col-lg-4">
+                @@include('../components/detail-tin-tuc/box-2-right.html')
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        @@include('../components/detail-tin-tuc/box-3-bds-lien-quan.html')
+    </div>
 
     <div class="container mt-3">
         <div class="row">
             <div class="col-12 col-lg-8">
-                @@include('../components/list-dau-gia/box-2-dau-gia-item.html')
-            </div>
-            <div class="col-12 col-lg-4">
-                @@include('../components/list-dau-gia/box-3-right.html')
+                @@include('../components/detail-tin-tuc/box-4-tin-tuc-lien-quan.html')
             </div>
         </div>
     </div>
-    
     @@include('../layout/footer.html')
 
 </body>

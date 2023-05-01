@@ -42,7 +42,7 @@ $width-toggle-nav: $font-size-lg*1.5 ;
             font-weight: 600;
             color: $navbar-light-active-color;
             transition: border 0.3s;
-            border-bottom:2px white solid ;
+            border-bottom:2px transparent solid ;
             padding:0;
             padding-bottom: 1px;
             &:hover {
