@@ -18,10 +18,12 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://hoibatdongsan.com.vn/hinh-anh/w1700/sys/xacthuc.png" class="d-block w-100" alt="...">
+                    <img src="https://hoibatdongsan.com.vn/hinh-anh/w1700/sys/xacthuc.png" class="d-block w-100"
+                        alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://hoibatdongsan.com.vn/hinh-anh/w1700/sys/khuyenmai.png" class="d-block w-100" alt="...">
+                    <img src="https://hoibatdongsan.com.vn/hinh-anh/w1700/sys/khuyenmai.png" class="d-block w-100"
+                        alt="...">
                 </div>
             </div>
         </div>
@@ -29,27 +31,28 @@
         <!-- box filter pc -->
         <div id="pc-filter" style="position: absolute; top:2rem;">
             <div id="tab-filter">
-                <div class="rounded-top text-light px-3 py-1"
-                    style="background-color: rgb(70, 11, 11, 0.8); width: fit-content;">
-                    Nhà đất bán
+                <div class="d-flex" style="gap:0.7rem">
+                    <div class="rounded-top text-light px-5 py-2"
+                        style="background-color: rgb(70, 11, 11, 0.8); width: fit-content; cursor: pointer;">
+                        Nhà đất bán
+                    </div>
+                    <div class="rounded-top text-light px-5 py-2"
+                        style="background-color: rgba(202, 202, 202, 0.8); color: black; width: fit-content; cursor: pointer;">
+                        Nhà cho thuê
+                    </div>
                 </div>
+
                 <div id="body-filter" class="p-3 rounded-end rounded-bottom" style="background-color: rgb(70, 11, 11, 0.8); height: auto;">
-                    <div class="input-group mb-3">
-                        <button class="btn btn-outline-light dropdown-toggle bg-light text-dark p-3"
-                            style="border-right: 1px solid #ccc; background-color: #fff !important;" type="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-home"></i> Nhà đất
+                    <div class="input-group mb-3" style="border-radius: 7px;background-color: white;align-items: center;">
+                        <button class="btn btn-outline-light dropdown-toggle bg-light text-dark p-3" style="border-right: transparent; background-color: #fff !important;" type="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-home"></i> Nhà đất
                             bán</button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <ul class="dropdown-menu" style="">
+                            <li><a class="dropdown-item" href="#">Đất thổ cư</a></li>
+                            <li><a class="dropdown-item" href="#">Đất nền dự án</a></li>
+                            <li><a class="dropdown-item" href="#">Lấy từ config</a></li>
                         </ul>
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                        <button class="btn btn-danger" type="button"><i class="fas fa-search"></i> Tìm kiếm</button>
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button" style=" border: transparent; height: 52px;">
+                        <button class="btn btn-danger" type="button" style="height: fit-content;margin-right: 7px;border-radius: 5px;padding: 10px;"><i class="fas fa-search"></i> Tìm kiếm</button>
                     </div>
 
                     <div class="row">
@@ -109,7 +112,7 @@
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="radio" name="listGroupRadio"
                                                     value="" id="firstRadio" checked>
-                                                <label class="form-check-label" for="firstRadio">Tất cả  mức giá</label>
+                                                <label class="form-check-label" for="firstRadio">Tất cả mức giá</label>
                                             </li>
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="radio" name="listGroupRadio"
@@ -124,7 +127,8 @@
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="radio" name="listGroupRadio"
                                                     value="" id="fourRadio">
-                                                <label class="form-check-label" for="fourRadio">800 triệu - 1 tỷ triệu</label>
+                                                <label class="form-check-label" for="fourRadio">800 triệu - 1 tỷ
+                                                    triệu</label>
                                             </li>
                                         </ul>
 
@@ -164,7 +168,8 @@
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="radio" name="listGroupRadio"
                                                     value="" id="firstRadio" checked>
-                                                <label class="form-check-label" for="firstRadio">Tất cả  diện tích</label>
+                                                <label class="form-check-label" for="firstRadio">Tất cả diện
+                                                    tích</label>
                                             </li>
                                             <li class="list-group-item">
                                                 <input class="form-check-input me-1" type="radio" name="listGroupRadio"
@@ -209,7 +214,7 @@
                                     }
                                 </style>
                                 <div id="filter_loc_them" class="dropdown-menu w-100 bg-transparent border-0 p-0 m-0">
-                                    <div  class="px-2 py-3 bg-light rounded shadow" style="min-width: 400px;">
+                                    <div class="px-2 py-3 bg-light rounded shadow" style="min-width: 400px;">
                                         Hướng nhà
                                         <div>
                                             <span class="badge rounded-pill text-bg-secondary fw-light">Đông</span>
@@ -217,10 +222,12 @@
                                             <span class="badge rounded-pill text-bg-secondary fw-light">Nam</span>
                                             <span class="badge rounded-pill text-bg-secondary fw-light">Bắc</span>
                                             <br>
-                                            <span class="badge rounded-pill text-bg-secondary fw-light">Đông - Bắc</span>
+                                            <span class="badge rounded-pill text-bg-secondary fw-light">Đông -
+                                                Bắc</span>
                                             <span class="badge rounded-pill text-bg-secondary fw-light">Tây - Bắc</span>
                                             <span class="badge rounded-pill text-bg-secondary fw-light">Tây - Nam</span>
-                                            <span class="badge rounded-pill text-bg-secondary fw-light">Đông - Nam</span>
+                                            <span class="badge rounded-pill text-bg-secondary fw-light">Đông -
+                                                Nam</span>
                                         </div>
 
                                         <div class="d-flex justify-content-between align-items-center mt-3">
